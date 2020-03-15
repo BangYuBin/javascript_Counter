@@ -1,6 +1,7 @@
 const number = document.getElementById("number");
 const increase = document.getElementById("increase");
 const decrease = document.getElementById("decrease");
+const Remove = document.getElementById("Remove");
 
 increase.onclick = () =>{
     const cur = parseInt(number.innerText, 10) //number의 내용(현재의 상태)을 10진수의 숫자로 변경하여 cur에 저장
@@ -15,3 +16,7 @@ decrease.onclick = () =>{
 };
 
 
+Remove.onclick = () =>{
+    number.innerText = 0;
+    console.log("초기화");
+}
