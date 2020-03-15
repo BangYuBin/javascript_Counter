@@ -17,6 +17,13 @@ decrease.onclick = () =>{
 
 
 Remove.onclick = () =>{
-    number.innerText = 0;
-    console.log("초기화");
+    const result = confirm("숫자를 초기화 하시겠습니까?");
+    if(result){
+        number.innerText = 0;
+        alert("초기화되었습니다.");
+        console.log("초기화");
+    }
+    else{
+        alert("초기화 취소");
+    }
 }
